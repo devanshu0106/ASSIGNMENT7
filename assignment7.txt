@@ -1,0 +1,127 @@
+QUES1:reverse a String
+ANS
+
+package acadviewdemo3;
+ class Reversestr 
+ {
+     public static void main(String []args)
+     {
+        String first="abcd";
+        StringBuilder second = new StringBuilder();
+        for(int i=first.length()-1;i>=0;i--)
+        {
+            second=second.append(first.charAt(i));
+            
+        }
+           System.out.println(second);
+     }
+    
+}
+
+QUES2:  generate all substrings of the string ?xyz?
+ANS
+
+package acadviewdemo3;
+ class Sbstr 
+ {
+    public static void main(String arg[])
+    {
+        String A="xyz";
+        for (int i = 0; i < A.length(); i++)
+        {
+            for (int j = i+1; j <= A.length(); j++) 
+                {
+                    System.out.println(A.substring(i,j));
+                }
+        }
+    }
+}
+
+QUES3: remove all vowels from the String
+ANS
+package acadviewdemo3;
+
+
+
+ 
+class Vovel2 
+{    
+    public static void main(String[] args)
+    {
+        String str1 = "hello today is a good day";
+        String str2 =str1.replaceAll("[AEIOUaeiou]", "");
+       
+        System.out.println(str2);
+
+    }
+}
+
+    
+
+QUES4:  to print the following pattern :
+a 
+ab 
+abc
+
+ANS
+
+
+package acadviewdemo3;
+
+
+class c 
+{
+    public static void main(String args[])
+    {
+        char ch=97;
+        for(int i=0;i<3;i++)
+        {
+            ch=97;
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println("");
+        }
+        
+    }
+    
+}
+
+QUES5: occurrence of a string 
+ANS
+
+package acadviewdemo3;
+
+ class Occurance 
+{
+     public static void main(String args[])
+     {
+     String str1="qwr";
+     String str2="abcde";
+     if(str1.contains(str2)||str2.contains(str1))
+     {
+     System.out.print("contains");
+     }
+     else
+     {
+         System.out.println("not contains");
+     }
+     }
+}
+
+QUES6: count the number of words 
+ANS
+
+package acadviewdemo3;
+ class Count 
+{
+       public static void main(String []args)
+       {
+           String str= "Hello I AM DEVANSHU";
+           String words[]= str.trim().split(" ");
+           System.out.print( words.length + str);
+       }
+    
+}
